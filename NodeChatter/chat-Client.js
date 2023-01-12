@@ -1,6 +1,9 @@
 const io = require("socket.io-client");
 
 const socketClient = io("http://localhost:3000")
+const actor = require("../GlobalVariables/JWGlobalTypes");
+
+
 
 socketClient.on("connect", () => {
     console.log("connection server");
